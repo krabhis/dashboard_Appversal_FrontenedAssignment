@@ -48,4 +48,21 @@ This project demonstrates **role-based UI rendering** with centralized state man
    - List of assigned tasks with title, due date, and progress bar.  
    - Buttons to increment/decrement progress in 10% steps.  
 ---
+## 🖥 Setup Instructions
+
+Follow these steps to run the project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/krabhis/dashboard_Appversal_FrontenedAssignment.git
+
+# Navigate to project folder
+cd Dashboard
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
 
