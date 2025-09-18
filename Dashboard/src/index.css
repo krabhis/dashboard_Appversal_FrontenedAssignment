@@ -34,7 +34,35 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.dark {
+  --bg: #0f1115;
+  --surface: #161a22;
+  --surface-2: #1d2330;
+  --text: #e5e7eb;
+  --muted: #9aa1af;
+  --primary: #4f46e5;
+  --primary-600: #4338ca;
+  --success: #16a34a;
+  --warning: #f59e0b;
+  --info: #06b6d4;
+  --danger: #ef4444;
+  --border: #2a3040;
+}
 
+body.light {
+  --bg: #f6f7fb;
+  --surface: #ffffff;
+  --surface-2: #f2f4f8;
+  --text: #111827;
+  --muted: #6b7280;
+  --primary: #4f46e5;
+  --primary-600: #4338ca;
+  --success: #16a34a;
+  --warning: #b45309;
+  --info: #0891b2;
+  --danger: #b91c1c;
+  --border: #e5e7eb;
+}
 
 /* ////////////////////////////////////// */
 
