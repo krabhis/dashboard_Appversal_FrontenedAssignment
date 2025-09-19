@@ -6,7 +6,7 @@ const initialState = {
   currentUserName: 'John Doe'
 }
 
-const roleSlice = createSlice({
+const roleSlice =createSlice({
   name: 'role',
   initialState,
   reducers: {      
@@ -15,7 +15,7 @@ const roleSlice = createSlice({
       state.currentRole =  action.payload 
 
     },
-    setUser: (state, action) => {  
+    setUser:(state, action) => {  
 
       const { id, name } =  action.payload
       state.currentUserId  = id

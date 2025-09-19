@@ -159,7 +159,7 @@ button:focus-visible {
 
 .card { 
   background: var(--surface); 
-  border: 1px solid var(--border); 
+  border: 2px solid var(--border); 
   border-radius: 8px; 
   padding: 10px 12px; 
 }
@@ -226,7 +226,7 @@ select {
 }
 
 .label { 
-  font-size: 12px; 
+  font-size: 14px; 
   color: var(--muted); 
 }
 
@@ -403,4 +403,8 @@ select {
    height: 10px; 
    border-radius: 2px; 
    display: inline-block; 
+  }
+
+  h2{
+    font-weight: bold;
   }
