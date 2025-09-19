@@ -8,7 +8,7 @@ const statusOptions = ['All', 'Working', 'Break', 'Meeting', 'Offline']
  
  export default function Dashboard() {
       const dispatch = useDispatch()
-      const { list, statusFilter, sortByActiveTasks, loading } = useSelector(s => s.members)
+      const { list, statusFilter, sortByActiveTasks } = useSelector(s => s.members)
 
   const { currentRole, currentUserId } = useSelector(s => s.role)
 
@@ -69,7 +69,7 @@ const summary = useMemo(() => {
       </header>
       <div className="layout">
         <aside className="fixed-sidebar">
-          <h3>Navigation</h3>
+          
           <div className="nav">
             <a href="#overview">Dashboard</a>
             {currentRole === 'lead' && <a href="#assign">Assign Task</a>}

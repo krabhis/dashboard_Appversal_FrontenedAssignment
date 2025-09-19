@@ -29,9 +29,7 @@
   color: var(--text);
   background-color: var(--bg);
   font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ 
 }
 
 .dark {
@@ -216,7 +214,6 @@ select {
   padding: 8px 10px; 
 }
 
-/* Simple form layout helpers */
 .form-grid { 
   display: grid; 
   gap: 8px; 
@@ -343,7 +340,8 @@ select {
    border-radius: 12px; 
    border: 1px solid var(--border);
    padding: 12px; background: var(--surface); 
-   display: grid; gap: 6px;
+   display: grid; 
+   gap: 6px; 
    }
 
 .kpi .title { 

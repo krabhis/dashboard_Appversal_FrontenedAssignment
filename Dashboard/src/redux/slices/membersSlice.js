@@ -33,6 +33,7 @@ const membersSlice = createSlice({
       if (member) member.status = status
 
     },
+
     addTaskToMember: {
 
       reducer: (state, action) => {
@@ -40,13 +41,16 @@ const membersSlice = createSlice({
         const member = state.list.find(m => m.id === memberId)
         if (member) member.tasks.push(task)
       },
+    
       prepare: ({ memberId, title, dueDate }) => ({
         payload: {
           memberId,
           task: { id: nanoid(), title, dueDate, progress: 0, completed: false }
         }
       })
+
     },
+
     updateTaskProgress: (state, action) => {
       const { memberId, taskId, delta } = action.payload
       const member = state.list.find(m => m.id === memberId)

@@ -9,19 +9,23 @@ const initialState = {
 const roleSlice = createSlice({
   name: 'role',
   initialState,
-  reducers: {
+  reducers: {      
     switchRole: (state, action) => {
-      state.currentRole = action.payload
+
+      state.currentRole =  action.payload 
+
     },
-    setUser: (state, action) => {
-      const { id, name } = action.payload
-      state.currentUserId = id
-      if (name) state.currentUserName = name
+    setUser: (state, action) => {  
+
+      const { id, name } =  action.payload
+      state.currentUserId  = id
+      if (name) state.currentUserName =  name 
+
     }
   }
 })
 
-export const { switchRole, setUser } = roleSlice.actions
+export const { switchRole , setUser } = roleSlice.actions   
 export default roleSlice.reducer
 
 
