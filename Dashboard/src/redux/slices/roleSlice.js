@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
   currentRole: 'member',
   currentUserId: 'u1',
-  currentUserName: 'John Doe'
+  currentUserName: 'Rahul Sharma'
 }
 
 const roleSlice =createSlice({
@@ -17,7 +17,7 @@ const roleSlice =createSlice({
     },
     setUser:(state, action) => {  
 
-      const { id, name } =  action.payload
+      const { id, name } =  action.payload 
       state.currentUserId  = id
       if (name) state.currentUserName =  name 
 

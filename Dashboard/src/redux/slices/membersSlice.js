@@ -2,17 +2,18 @@ import { createAsyncThunk, createSlice, nanoid } from '@reduxjs/toolkit'
 
 export const fetchInitialMembers = createAsyncThunk('members/fetchInitial', async () => {
 
-  return [
-  { id: 'u1', name: 'John Doe', status: 'Working', tasks: [] },
-  { id: 'u2', name: 'Jane Smith', status: 'Break', tasks: [] },
-  { id: 'u3', name: 'Alex Johnson', status: 'Meeting', tasks: [] },
+  return[
+  { id: 'u1', name: 'Rahul Sharma', status: 'Working', tasks: [] },
+  { id: 'u2', name: 'Neha Gupta', status: 'Break', tasks: [] },
+  { id: 'u3', name: 'Amit Kumar', status: 'Meeting', tasks: [] },
   { id: 'u4', name: 'Priya Patel', status: 'Offline', tasks: [] },
-  { id: 'u5', name: 'Rahul Verma', status: 'Working', tasks: [] },
-  { id: 'u6', name: 'Emily Davis', status: 'Training', tasks: [] },
-  { id: 'u7', name: 'Carlos Martinez', status: 'Break', tasks: [] },
-  { id: 'u8', name: 'Sophia Lee', status: 'Working', tasks: [] },
-  { id: 'u9', name: 'Mohammed Ali', status: 'Meeting', tasks: [] }
+  { id: 'u5', name: 'Rohan Verma', status: 'Working', tasks: [] },
+  { id: 'u6', name: 'Sneha Reddy', status: 'Training', tasks: [] },
+  { id: 'u7', name: 'Karan Mehta', status: 'Break', tasks: [] },
+  { id: 'u8', name: 'Ananya Iyer', status: 'Working', tasks: [] },
+  { id: 'u9', name: 'Mohammed Irfan', status: 'Meeting', tasks: [] }
 ]
+
 
 })
 
